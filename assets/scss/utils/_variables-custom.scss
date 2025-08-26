@@ -1,0 +1,86 @@
+// 字體尺寸
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
+$h7-font-size: 0.875rem;
+$h8-font-size: 0.75rem;
+
+// 字體尺寸 (scss)
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+);
+
+// 顏色變數 (定義)
+$Neutral-100: #313131;
+$Neutral-80: #4b4b4b;
+$Neutral-60: #8e8e8e;
+$Neutral-40: #c7c7c7;
+$Neutral-white: #ffffff;
+
+$primary-80: #aa4c13;
+$primary-60: #cd6d12;
+$primary-40: #e89018;
+$primary-20: #fbefca;
+$primary-tint: #fef9ec;
+
+$Accent-lightBlue: #c9edfc;
+$Accent-darkBlue: #014a66;
+
+// 顏色變數 (擴充)
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "Neutral-100": $Neutral-100,
+    "Neutral-80": $Neutral-80,
+    "Neutral-60": $Neutral-60,
+    "Neutral-40": $Neutral-40,
+    "Neutral-white": $Neutral-white,
+    "primary-80": $primary-80,
+    "primary-60": $primary-60,
+    "primary-40": $primary-40,
+    "primary-20": $primary-20,
+    "primary-tint": $primary-tint,
+    "Accent-lightBlue": $Accent-lightBlue,
+    "Accent-darkBlue": $Accent-darkBlue,
+  )
+);
+
+// margin 或 padding 的空間 (scss)
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
+  21: $spacer * 5.25,
+  22: $spacer * 5.5,
+  23: $spacer * 5.75,
+  24: $spacer * 6,
+  25: $spacer * 6.25,
+);

@@ -1,5 +1,17 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 字體
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 
+// 變數、通用樣式
+@import "./utils/utilities";
+@import "./utils/variables-custom";
 
-@import './pages/index.scss';
+// Bootstrap
+@use "bootstrap" as *;
+
+// base
+@import "./base/base";
+@import "./base/reset";
+
+// layout
+@import "./layout/footer";
+@import "./layout/header";
