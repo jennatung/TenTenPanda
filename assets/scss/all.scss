@@ -6,7 +6,7 @@
 @import "./utils/variables-custom";
 
 // Bootstrap
-@use "bootstrap" as *;
+@import "bootstrap/scss/bootstrap";
 
 // base
 @import "./base/base";
