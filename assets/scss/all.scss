@@ -1,17 +1,21 @@
 // 字體
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 
-// 變數、通用樣式
-@import "./utils/utilities";
+// 變數
 @import "./utils/variables-custom";
 
-// Bootstrap
-@import "bootstrap/scss/bootstrap";
+
+// 通用樣式
+@import "./utils/utilities";
+
+@import "../../node_modules/bootstrap";
 
 // base
-@import "./base/base";
 @import "./base/reset";
+@import "./base/base";
 
 // layout
 @import "./layout/footer";
 @import "./layout/header";
+
+
