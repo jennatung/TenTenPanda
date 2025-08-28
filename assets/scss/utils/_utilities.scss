@@ -75,4 +75,12 @@ $utilities: (
       999: 999px,
     ),
   ),
+
+  "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true
+    ),
 );

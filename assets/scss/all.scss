@@ -2,16 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 
 // 變數、通用樣式
-@import "./utils/utilities";
 @import "./utils/variables-custom";
+@import "./utils/utilities";
+@import "../../node_modules/bootstrap";
+@import "bootstrap/scss/utilities/api";
 
 // Bootstrap
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 
 // base
-@import "./base/base";
 @import "./base/reset";
+@import "./base/base";
 
 // layout
 @import "./layout/footer";
 @import "./layout/header";
+
+//page
+@import "./pages/index";
