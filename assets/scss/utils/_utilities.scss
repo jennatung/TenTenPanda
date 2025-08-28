@@ -14,6 +14,7 @@ $utilities: (
       120: 120px,
       999: 999px,
     ),
+    responsive: true,
   ),
   "border-radius-tl": (
     property: border-top-left-radius,
@@ -29,6 +30,7 @@ $utilities: (
       120: 120px,
       999: 999px,
     ),
+    responsive: true,
   ),
   "border-radius-tr": (
     property: border-top-right-radius,
@@ -44,6 +46,7 @@ $utilities: (
       120: 120px,
       999: 999px,
     ),
+    responsive: true,
   ),
   "border-radius-bl": (
     property: border-bottom-left-radius,
@@ -59,6 +62,7 @@ $utilities: (
       120: 120px,
       999: 999px,
     ),
+    responsive: true,
   ),
   "border-radius-br": (
     property: border-bottom-right-radius,
@@ -74,6 +78,7 @@ $utilities: (
       120: 120px,
       999: 999px,
     ),
+    responsive: true,
   ),
 
   "font-size": (
@@ -83,4 +88,17 @@ $utilities: (
       values: $font-sizes,
       responsive: true
     ),
+);
+
+// 重新定義 font-size
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": (
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true,
+    ),
+  )
 );
