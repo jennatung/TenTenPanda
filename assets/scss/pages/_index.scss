@@ -1,3 +1,321 @@
-.index-title {
-  font-size: 100px;
+.banner-img{
+  max-width: 1520px;
+  height: 81.9vh;
+  @include media-breakpoint-up(lg){
+    height: 73.59756vh;
+  }
+}
+.banner-boder-radius-lg{
+  border-radius: 40px;
+  @include media-breakpoint-up(lg){
+    border-radius: 56px;
+  }
+}
+
+// 雪夜莓語-標題區塊
+.banner-seasonal-title{
+  width: 184px;
+  height: 143px;
+  left: -1px; 
+  top: 0;
+  border-bottom-right-radius: 56px;
+  position: relative;
+  @include media-breakpoint-up(lg){
+    all: unset;
+    box-sizing: border-box;
+    width: 294px;
+    height: 237px;
+    border-top-right-radius: 56px;
+    left: -1px;
+    bottom: -1%;
+  }
+  ::before{
+    content: "";
+    position: absolute;
+    content: url("../images/corner-l.png");
+    width: 40px;
+    height: 40px;
+    bottom: 1px;
+    left: -1px;
+    transform: translateY(140%) translateX(0%) rotateX(180deg);
+    @include media-breakpoint-up(lg){
+      width: 56px;
+      height: 56px;
+      top: 0;
+      left: 0;
+      transform: translateY(-90%);
+    }
+  }
+  ::after{
+    content: "";
+    position: absolute;
+    content: url("../images/corner-l.png");
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 1px;
+    transform: translateX(100%) translateY(40%) rotateX(180deg);
+    @include media-breakpoint-up(lg){
+      width: 56px;
+      height: 56px;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      transform: translateX(95%) translateY(0) rotateX(0);
+    }
+  }
+}
+.banner-seasonal-title-img{
+  width: 132px;
+  height: 40px;
+  @include media-breakpoint-up(lg){
+    width: 200px;
+    height: 60px;
+  }  
+}
+
+// 雪夜莓語-日期
+.banner-seasonal-date{
+  width: 223px;
+  height: 66px;
+  left: -1px; 
+  bottom: -2px;
+  border-top-right-radius: 32px;
+  position: relative;
+  @include media-breakpoint-up(lg){
+    all: unset;
+    box-sizing: border-box;
+    width: 362px;
+    height: 94px;
+    border-top-left-radius: 40px;
+    right: -1px;
+    bottom: -1%;
+  }
+  ::before{
+    content: "";
+    position: absolute;
+    content: url("../images/corner-s.png");
+    top: 5px;
+    left: -1px;
+    transform: translateY(-100%) rotateY(180deg);
+    @include media-breakpoint-up(lg){
+      transform: translateY(120%) translateX(-90%) scale(90%) rotateY(0deg);
+    }
+  }
+  ::after{
+    content: "";
+    position: absolute;
+    content: url("../images/corner-s.png");
+    right: 1px;
+    bottom: -3px;
+    transform: translateX(100%) rotateY(180deg);
+    @include media-breakpoint-up(lg){
+      all: unset;
+      content: "";
+      position: absolute;
+      content: url("../images/corner-s.png");
+      top: 7px;
+      right: 0;
+      transform: translateY(-100%);
+    }
+  }
+}
+// 封面裝飾線條甜甜圈
+.banner-deco{
+  display: none;
+  @media (min-width:1650px) {
+    display: block;    
+  }
+}
+
+.section-list-donut{
+  width: 30px;
+  height: 24px;
+  @include media-breakpoint-up(lg){
+    width: 60px;
+    height: 48px;
+  }
+}
+
+.swiper-slide{
+  width: 320px;
+  @include media-breakpoint-up(lg){
+    width: 1000px;
+  }
+}
+.swiper-pagination{
+  position: relative;
+  &-bullet{
+    width: 12px;
+    height: 12px;
+    &-active{
+      background: $primary40;
+    }
+  }
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 16px;
+}
+
+.sales-ad{
+  width: 320px;
+  height: 200px;
+  border-radius: 24px;
+  @include media-breakpoint-up(lg){
+    width: 1000px;
+    height: 500px;
+    border-radius: 56px;
+  }
+  &-1{
+    background-image: url(../images/ad1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px;
+    @include media-breakpoint-up(lg){
+      padding-left: 160px;
+    }
+  }
+  &-title{
+    width: 100px;
+    height: 32px;
+    @include media-breakpoint-up(lg){
+      width: 256px;
+      height: 80px;
+    }
+  }
+  &-2{
+    background-image: url(../images/ad2.jpg);
+    background-size: 200%;
+    background-position: 30% 50%;
+    @include media-breakpoint-up(lg){
+      background-size: 160%;
+      background-position: left;
+    }
+  }
+  &-span{
+    border-radius: 16px 32px 32px 0px;
+    @include media-breakpoint-up(lg){
+      border-radius: 32px 80px 80px 0px;
+    }
+  }
+  &-3{
+    background-image: url(../images/ad3.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.deco-bg-circle{
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: -40%;
+  left: -25%;
+  @include media-breakpoint-up(lg){
+    width: 631px;
+    height: 631px;
+    top: -15%;
+    left: -15%;
+  }
+}
+
+
+
+
+
+
+
+// 補
+.fz18-72-Jenna{
+  font-size: 18px;
+  @include media-breakpoint-up(lg){
+    font-size: 72px;
+  }
+}
+
+
+
+
+// section 5 甜甜報你知
+.news {
+
+  /* 右側清單區塊 */
+  .list-group {
+    
+    .list-group-item {
+      background-color: $primaryTint;  // odd：奇數背景顏色
+      border: 0;
+      
+      &:nth-child(even) { background-color: $white; } // even：偶數背景顏色
+
+      /* 消息標題顏色 ＆ hover / focus 效果  */
+      .news-title { color: $neutral100; }
+      &:hover,
+      &:focus-visible {
+        .news-title { color: $primary40; }
+      }
+    }
+  }
+
+  /* 左側預覽圖區塊 */
+  .news-preview { 
+    position: relative;
+
+    /* 左側預覽圖容器 */
+    .preview-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0; transition: opacity .25s;
+    }
+
+    /* 消息 2 圖片位置調整 */
+    .ad1-news { object-position: 100% center; }
+  }
+
+  /* 點擊（radio:checked）→ 顯示對應圖片 */
+  #n1:checked ~ .row .news-preview [data-key="1"],
+  #n2:checked ~ .row .news-preview [data-key="2"],
+  #n3:checked ~ .row .news-preview [data-key="3"],
+  #n4:checked ~ .row .news-preview [data-key="4"] { opacity: 1; }
+
+  /* 點擊後：對應那筆標題維持同色 */
+  #n1:checked ~ .row label[for="n1"] .news-title,
+  #n2:checked ~ .row label[for="n2"] .news-title,
+  #n3:checked ~ .row label[for="n3"] .news-title,
+  #n4:checked ~ .row label[for="n4"] .news-title { color: $primary40; }
+
+  /* —— Hover 顯示圖片：data-hover 版本（用極小 JS 設定 .news 的 data-hover="1~4"） */
+  &[data-hover] .news-preview .preview-img { opacity: 0 !important; }
+  &[data-hover="1"] .news-preview [data-key="1"],
+  &[data-hover="2"] .news-preview [data-key="2"],
+  &[data-hover="3"] .news-preview [data-key="3"],
+  &[data-hover="4"] .news-preview [data-key="4"] { opacity: 1 !important; }
+
+  /* 文字 RWD */
+  .news-detail {
+    font-size: 14px;
+    @include media-breakpoint-up(lg) { font-size: 16px; }
+  }
+
+  /* 按鈕 */
+  .btn.more-btn{
+    background-color: $white;
+    color: $primary80;
+    border: 1px solid $primary80;
+
+    &:hover{
+      background-color: $primary40;
+      color: $white;
+      border-color: $primary40;
+    }
+    &:focus,
+    &:focus-visible{
+      background-color: $primary40;
+      color: $white;
+      border-color: $primary40;
+      outline: 0; box-shadow: none;
+    }
+  }
 }
