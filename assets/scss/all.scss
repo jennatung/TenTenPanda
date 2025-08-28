@@ -8,12 +8,18 @@
 // 變數、通用樣式
 @import "./utils/variables-custom";
 @import "./utils/utilities";
+@import "bootstrap/scss/utilities/api";
 
+// Bootstrap
+@use "bootstrap" as *;
 
 // base
-@import "./base/base";
 @import "./base/reset";
+@import "./base/base";
 
 // layout
 @import "./layout/footer";
 @import "./layout/header";
+
+//page
+@import "./pages/index";

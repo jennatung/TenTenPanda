@@ -1,4 +1,88 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../pages/index.html">
+      <img src="../assets/images/logo.jpg" alt="TenTen-Logo" />
+    </a>
+    <button
+      class="navbar-toggler bg-primary-20 border-primary-20"
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#menu"
+      aria-label="開啟選單"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="#">品牌故事</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">最新消息</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">商品列表</a></li>
+    </ul>
+  </div>
+  <!-- Modal (行動版選單) -->
+  <div class="modal fade" id="menu" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down">
+      <div class="modal-content p-3">
+        <div
+          class="modal-header p-0 bg-primary-tint br-tl-40 header-height align-items-start"
+        >
+          <div>
+            <img
+              src="../assets/images/corner-S.png"
+              alt="corner"
+              class="position-absolute"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn ms-auto p-0 border-0"
+            data-bs-dismiss="modal"
+            aria-label="關閉"
+          >
+            <div class="position-relative">
+              x
+              <div
+                class="bg-neutral-white br-bl-40 position-relative position-absolute top-0 end-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi text-primary-40 m-7"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+                <img
+                  src="../assets/images/corner-S.png"
+                  alt="corner"
+                  class="position-absolute start-0"
+                />
+
+                <div>
+                  <img
+                    src="../assets/images/corner-S.png"
+                    alt="corner"
+                    class="position-absolute"
+                  />
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">品牌故事</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">最新消息</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">商品列表</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+</nav>
