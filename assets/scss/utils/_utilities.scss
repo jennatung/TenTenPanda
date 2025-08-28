@@ -80,6 +80,14 @@ $utilities: (
     ),
     responsive: true,
   ),
+
+  "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true
+    ),
 );
 
 // 重新定義 font-size
