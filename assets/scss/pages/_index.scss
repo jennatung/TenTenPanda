@@ -274,11 +274,6 @@
       object-fit: cover;
       opacity: 0; transition: opacity .25s;
     }
-
-    /* 消息 2 圖片位置調整 */
-    .ad1-news {
-      object-position: 100% center;
-    }
   }
 
   /* 點擊（radio:checked）→ 顯示對應圖片 */
@@ -324,5 +319,25 @@
       color: $white;
       border-color: $primary40;
     }
+  }
+}
+
+// section 6 甜甜在這裡
+.map{
+  background-image: url(/assets/images/s6-bg.png);
+  .s6-bg{
+    background-color: $white;
+    .map-img-col{
+      max-width: 327px;
+      height: 335px;
+      @include media-breakpoint-up(lg){
+        max-width: 1152px;
+        height: 634px; 
+    }
+      .map-img{
+        object-position: 0% 50%;
+      }
+  }
+
   }
 }
