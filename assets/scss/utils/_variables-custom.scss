@@ -7,78 +7,87 @@ $h5-font-size: 1.25rem;
 $h6-font-size: 1.125rem;
 $h7-font-size: 0.875rem;
 $h8-font-size: 0.75rem;
+$h9-font-size: 1rem;
+$h10-font-size: 4.5rem;
 
 // 字體尺寸 map (scss)
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  7: $h7-font-size,
-  8: $h8-font-size,
-);
+  1: $h1-font-size,  // 40px
+  2: $h2-font-size,  // 32px
+  3: $h3-font-size,  // 28px
+  4: $h4-font-size,  // 24px
+  5: $h5-font-size,  // 20px
+  6: $h6-font-size,  // 18px
+  7: $h7-font-size,  // 14px
+  8: $h8-font-size,  // 12px
+  9: $h9-font-size,
+  10: $h10-font-size
+); 
 
 // 顏色變數 (定義)
-$neutral100: #313131;
-$neutral80: #4b4b4b;
-$neutral60: #8e8e8e;
-$neutral40: #c7c7c7;
-$neutralWhite: #ffffff;
+$neutral-100: #313131;
+$neutral-80: #4b4b4b;
+$neutral-60: #8e8e8e;
+$neutral-40: #c7c7c7;
+$neutral-white: #ffffff;
 
-$primary80: #aa4c13;
-$primary60: #cd6d12;
-$primary40: #e89018;
-$primary20: #fbefca;
-$primaryTint: #fef9ec;
+$primary-80: #aa4c13;
+$primary-60: #cd6d12;
+$primary-40: #e89018;
+$primary-20: #fbefca;
+$primary-tint: #fef9ec;
 
-$accentLightBlue: #c9edfc;
-$accentDarkBlue: #014a66;
+$accent-lightBlue: #c9edfc;
+$accent-darkBlue: #014a66;
 
 // 顏色變數
 $theme-colors: (
-  "neutral-100": $neutral100,
-  "neutral-80": $neutral80,
-  "neutral-60": $neutral60,
-  "neutral-40": $neutral40,
-  "neutral-white": $neutralWhite,
-  "primary-80": $primary80,
-  "primary-60": $primary60,
-  "primary-40": $primary40,
-  "primary-20": $primary20,
-  "primary-tint": $primaryTint,
-  "accent-lightBlue": $accentLightBlue,
-  "accent-darkBlue": $accentDarkBlue,
+  "neutral-100": $neutral-100,
+  "neutral-80": $neutral-80,
+  "neutral-60": $neutral-60,
+  "neutral-40": $neutral-40,
+  "neutral-white": $neutral-white,
+  "primary-80": $primary-80,
+  "primary-60": $primary-60,
+  "primary-40": $primary-40,
+  "primary-20": $primary-20,
+  "primary-tint": $primary-tint,
+  "accent-lightBlue": $accent-lightBlue,
+  "accent-darkBlue": $accent-darkBlue,
 );
 
 // margin 或 padding 的空間 (scss)
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer * 0.75,
-  4: $spacer,
-  5: $spacer * 1.25,
-  6: $spacer * 1.5,
-  7: $spacer * 1.75,
-  8: $spacer * 2,
-  9: $spacer * 2.25,
-  10: $spacer * 2.5,
-  11: $spacer * 2.75,
-  12: $spacer * 3,
-  13: $spacer * 3.25,
-  14: $spacer * 3.5,
-  15: $spacer * 3.75,
-  16: $spacer * 4,
-  17: $spacer * 4.25,
-  18: $spacer * 4.5,
-  19: $spacer * 4.75,
-  20: $spacer * 5,
-  21: $spacer * 5.25,
-  22: $spacer * 5.5,
-  23: $spacer * 5.75,
-  24: $spacer * 6,
-  25: $spacer * 6.25,
-);
+  1: $spacer * 0.25,   // 4 px
+  2: $spacer * 0.5,    // 8 px
+  3: $spacer * 0.75,   // 12 px
+  4: $spacer,          // 16 px
+  5: $spacer * 1.25,   // 20 px
+  6: $spacer * 1.5,    // 24 px
+  7: $spacer * 1.75,   // 28 px
+  8: $spacer * 2,      // 32 px
+  9: $spacer * 2.25,   // 36 px
+  10: $spacer * 2.5,   // 40 px
+  11: $spacer * 2.75,  // 44 px
+  12: $spacer * 3,     // 48 px
+  13: $spacer * 3.25,  // 52 px
+  14: $spacer * 3.5,   // 56 px
+  15: $spacer * 3.75,  // 60 px
+  16: $spacer * 4,     // 64 px
+  17: $spacer * 4.25,  // 68 px
+  18: $spacer * 4.5,   // 72 px
+  19: $spacer * 4.75,  // 76 px
+  20: $spacer * 5,     // 80 px
+  21: $spacer * 5.25,  // 84 px
+  22: $spacer * 5.5,   // 88 px
+  23: $spacer * 5.75,  // 92 px
+  24: $spacer * 6,     // 96 px
+  25: $spacer * 6.25,  // 100 px
+  26: $spacer * 6.5,   // 104px
+  27: $spacer * 6.75,  // 108px
+  28: $spacer * 7,     // 112px
+  29: $spacer * 7.25,  // 116px
+  30: $spacer * 7.5,   // 120px
+); 

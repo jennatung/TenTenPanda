@@ -7,8 +7,14 @@
 
 // 通用樣式
 @import "./utils/utilities";
-
 @import "../../node_modules/bootstrap";
+
+// 註記討論 : 這裡是又改回來這樣的形式嗎?
+// 變數、通用樣式
+// @import "./utils/variables-custom";
+// @import "./utils/utilities";
+// @import "../../node_modules/bootstrap";
+// @import "bootstrap/scss/utilities/api";
 
 // base
 @import "./base/reset";
@@ -17,5 +23,7 @@
 // layout
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/header-profile";
 
-
+//page
+@import "./pages/index";

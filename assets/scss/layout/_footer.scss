@@ -1,4 +1,25 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.fs-T-S {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: $neutral-80;
+}
+
+.fs-T-M {
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: $neutral-100;
+}
+
+@media (min-width: 992px) {
+  .fs-T-M {
+    font-size: 20px; /* 將 fs-T-M 覆蓋成 fs-T-L 的大小 */
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .fs-T-M {
+    font-size: 18px;
+  }
 }

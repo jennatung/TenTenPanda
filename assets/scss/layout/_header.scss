@@ -1,3 +1,112 @@
+// LOGO 尺寸設定
+.logo {
+  max-height: 42px;
+  height: auto;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    max-height: 120px;
+  }
+}
+
 .header-height {
   height: 120px;
+}
+
+.no-caret::after {
+  display: none !important;
+}
+
+.hover-text:hover {
+  font-weight: 700;
+  color: $primary-40;
+}
+
+.dropdown-focus .dropdown-menu {
+  display: none;
+  position: relative;
+}
+
+// modal 顯示向上/向下箭頭
+.icon-down {
+  display: inline;
+}
+.icon-up {
+  display: none;
+}
+
+// 下拉切換 icon
+.nav-link.show .icon-down {
+  display: none;
+}
+.nav-link.show .icon-up {
+  display: inline;
+}
+
+// 按鈕切換
+.btn-outline-primary-80:active,
+.btn-outline-primary-80:focus {
+  color: #ffffff !important;
+  background-color: #e89018 !important;
+  border-color: #e89018 !important;
+}
+
+// 商品列表的下拉選單對齊
+#productList + .dropdown-menu {
+  min-width: 100%;
+}
+
+// nav 點擊時顯現 border
+.nav-item .nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link.show.fw-700 {
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 2px solid $primary-40;
+}
+
+.nav-link.show.fw-400 {
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 2px solid $primary-40;
+}
+
+// 移除漢堡選單點擊時的邊框
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// 數量的按鈕樣式去除
+.btn-none {
+  background: none;
+  border: none;
+  padding: 0;  
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+  justify-content: center;  
+}
+
+.btn-icon:focus {
+  outline: none;
+}
+
+// 購物車 modal (桌面版)
+.fs-T-S {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: $neutral-80;
+}
+
+.fs-T-M {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: $neutral-100;
 }
