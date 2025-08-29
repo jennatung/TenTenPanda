@@ -1,3 +1,4 @@
+// <------------ 甜甜推薦-recommend Start ------------> //
 .banner-img{
   max-width: 1520px;
   height: 81.9vh;
@@ -128,6 +129,7 @@
   }
 }
 
+//section 甜甜圈標題圖片
 .section-list-donut{
   width: 30px;
   height: 24px;
@@ -221,23 +223,122 @@
 }
 
 
-
-
-
-
-
-// 補
-.fz18-72-Jenna{
-  font-size: 18px;
+// <------------ section 3 甜甜推薦-recommend Start ------------> //
+.recommend-main{
+  background-color: $primary20;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
   @include media-breakpoint-up(lg){
-    font-size: 72px;
+      border-top-left-radius: 120px;
+  }
+  position: relative; // 確保偽元素定位參考點
+
+  //container 左邊圖片
+  .recommend-bigtitle{
+    z-index: 0;               // 視需要調整，確保在內容底下
+    left: -152px;
+    bottom: 64px;
+  }
+  
+  //container 右邊背景顏色
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 120px;
+    bottom: 0;
+    /* 背景要延伸到螢幕最右邊 */
+    width: calc(100vw); // 或直接 100vw，但會蓋到左邊，要依需求調整
+    background-color: $primary20; // 你要的顏色
+    z-index: -1; // 放在最底層
+  }
+
+  button{
+    background-color: white;
+    color: $neutral60;
+    // 預設「已啟用」狀態
+    &.active {
+      background: $primary60;
+      color: white;
+      font-weight: 700;
+    }
+    // 滑鼠按下 or 鍵盤聚焦
+    &:active,
+    &:focus{
+      background: $primary60;
+      color: white; 
+      font-weight: 700;
+    }
+     
+  }
+
+  //商品圖片大小調整
+  .recommend-commodity{
+    // 限定口味圖片
+    .img-limited{
+      width: 90%; //
+      height: auto; /* 保持比例 */
+      @include media-breakpoint-up(lg){
+        width: 50%; //
+        height: auto; /* 保持比例 */
+      }
+    }
+
+    // 經典口味圖片
+    .img-classic{
+      width: 90%; //
+      height: auto; /* 保持比例 */
+      @include media-breakpoint-up(lg){
+        width: 60%; //
+        height: auto; /* 保持比例 */
+        max-width: 230px;
+      }
+    }
   }
 }
+// <------------ section 3 甜甜推薦-recommend End ------------> //
 
 
+// <------------ section 4 Slogan start ------------> //
+.slogan-section{
+  background-image: url(/assets/images/bg-slogan-mb.png);
+  width: auto;
+  height: 375px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 0;
+
+  //背景左至右 白色漸層色
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: -1;
+  }
+
+  @include media-breakpoint-up(lg){
+    background-position: 75% 95%;
+    height: 473px;
+  }
+
+  .slogan-text{
+    color: white;
+    @include media-breakpoint-up(lg){
+      color: $neutral100;
+    }
+  }
+}
+// <------------ section 4 Slogan End ------------> //
 
 
-// section 5 甜甜報你知
+// <------------ section 5 甜甜報你知-news Start ------------> //
 .news {
   /* 右側清單區塊 */
   .list-group {
@@ -321,8 +422,10 @@
     }
   }
 }
+// <------------ section 5 甜甜報你知-news End ------------> //
 
-// section 6 甜甜在這裡
+
+// <------------ section 5 甜甜在這裡-map Start ------------> //
 .map{
   background-image: url(/assets/images/s6-bg.png);
   .s6-bg{
@@ -346,5 +449,15 @@
   }
     
 
+  }
+}
+// <------------ section 5 甜甜在這裡-map End ------------> //
+
+
+// 補
+.fz18-72-Jenna{
+  font-size: 18px;
+  @include media-breakpoint-up(lg){
+    font-size: 72px;
   }
 }
