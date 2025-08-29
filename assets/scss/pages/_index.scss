@@ -327,17 +327,24 @@
   background-image: url(/assets/images/s6-bg.png);
   .s6-bg{
     background-color: $white;
-    .map-img-col{
+    .store{
       max-width: 327px;
-      height: 335px;
       @include media-breakpoint-up(lg){
-        max-width: 1152px;
-        height: 634px; 
+            max-width: 1152px;
+          }
+      .map-img-col{
+        max-width: 327px;
+        height: 335px;
+          @include media-breakpoint-up(lg){
+            max-width: 1152px;
+            height: 634px; 
+          }
+          .map-img{
+            object-position: 0% 50%;
+          }
     }
-      .map-img{
-        object-position: 0% 50%;
-      }
   }
+    
 
   }
 }
