@@ -247,13 +247,19 @@
       background-color: $primaryTint;  // odd：奇數背景顏色
       border: 0;
       
-      &:nth-child(even) { background-color: $white; } // even：偶數背景顏色
+      &:nth-child(even) {
+        background-color: $white;      // even：偶數背景顏色
+      } 
 
       /* 消息標題顏色 ＆ hover / focus 效果  */
-      .news-title { color: $neutral100; }
+      .news-title {
+        color: $neutral100;
+      }
       &:hover,
       &:focus-visible {
-        .news-title { color: $primary40; }
+        .news-title {
+          color: $primary40;
+        }
       }
     }
   }
@@ -271,7 +277,9 @@
     }
 
     /* 消息 2 圖片位置調整 */
-    .ad1-news { object-position: 100% center; }
+    .ad1-news {
+      object-position: 100% center;
+    }
   }
 
   /* 點擊（radio:checked）→ 顯示對應圖片 */
@@ -296,7 +304,8 @@
   /* 文字 RWD */
   .news-detail {
     font-size: 14px;
-    @include media-breakpoint-up(lg) { font-size: 16px; }
+    @include media-breakpoint-up(lg) {
+      font-size: 16px; }
   }
 
   /* 按鈕 */
@@ -315,7 +324,6 @@
       background-color: $primary40;
       color: $white;
       border-color: $primary40;
-      outline: 0; box-shadow: none;
     }
   }
 }
