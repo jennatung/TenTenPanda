@@ -1,13 +1,14 @@
 // 字體
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 
-// 變數
+// 變數、通用樣式
 @import "./utils/variables-custom";
-
-
-// 通用樣式
 @import "./utils/utilities";
 @import "../../node_modules/bootstrap";
+@import "bootstrap/scss/utilities/api";
+
+// Bootstrap
+// @import "bootstrap/scss/bootstrap";
 
 // 註記討論 : 這裡是又改回來這樣的形式嗎?
 // 變數、通用樣式
@@ -26,4 +27,8 @@
 @import "./layout/header-profile";
 
 //page
+<<<<<<< HEAD
 @import "./pages/index";
+=======
+@import "./pages/index";
+>>>>>>> 33fb37f476540445b08c1a34646db4c90683a8cb
