@@ -47,7 +47,7 @@
 
 // 按鈕切換
 .btn-outline-primary-80:active,
-.btn-outline-primary-80:focus {
+.btn-outline-primary-80:hover {
   color: #ffffff !important;
   background-color: #e89018 !important;
   border-color: #e89018 !important;
@@ -109,4 +109,28 @@
   line-height: 1.5;
   letter-spacing: 4%;
   color: $neutral-100;
+}
+
+// ICON 狀態
+.bg-primary-20:hover,
+.bg-primary-20:active {
+  background-color: $primary-40 !important;
+}
+
+.bg-primary-20:hover svg,
+.bg-primary-20:active svg{
+  color: $neutral-white !important;
+}
+
+// 選單狀態
+.navbar .nav-link.text-neutral-100 {
+  display: inline-block;
+  color: $neutral-100;
+}
+
+.navbar .nav-link.text-neutral-100:hover,
+.navbar .nav-link.text-neutral-100:active {
+  color: $primary-40 !important;
+  font-weight: 700;
+  border-bottom: 2px solid $primary-40;
 }
