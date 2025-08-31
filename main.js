@@ -33,6 +33,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const news = document.querySelector('.news');
   if (!news) return;
@@ -58,3 +59,4 @@ document.addEventListener('DOMContentLoaded', () => {
   list.addEventListener('mouseleave', () => news.removeAttribute('data-hover'));
   list.addEventListener('focusout',   () => news.removeAttribute('data-hover'));
 });
+
