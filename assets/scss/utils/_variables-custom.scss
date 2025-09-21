@@ -20,7 +20,7 @@ $font-sizes: (
   6: $h6-font-size,  // 18px
   7: $h7-font-size,  // 14px
   8: $h8-font-size,  // 12px
-  9: $h9-font-size,
+  9: $h9-font-size,  // 16px
   10: $h10-font-size
 ); 
 
@@ -91,3 +91,10 @@ $spacers: (
   29: $spacer * 7.25,  // 116px
   30: $spacer * 7.5,   // 120px
 ); 
+
+// 核取方塊背景
+$form-check-input-bg:                     $neutral-white !default;
+$form-check-input-checked-bg-color:       $primary-40 !default;
+
+// modal 滿版螢幕背景
+$modal-backdrop-bg:                  rgba($neutral-100, 0.4)!default;
