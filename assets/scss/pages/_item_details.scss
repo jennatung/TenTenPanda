@@ -1,0 +1,30 @@
+.breadcrumb {
+  display: flex;
+  align-items: center; /* 保證圖與文字垂直置中 */
+}
+
+.bread-item {
+  display: flex;
+  align-items: center;
+}
+
+//modal設定
+.modal_set{
+  //設定陰影
+  box-shadow: 0px 4px 16px rgba(49, 49, 49, 0.4);
+  max-width: 300px;
+  height: 178px;
+  @include media-breakpoint-up(lg) {
+    max-width: 416px;
+    height: 204px;
+  }
+  //設定愛心RWD大小
+  .icon_favorite{
+    width: 24px;
+    height: 24px;
+    @include media-breakpoint-up(lg) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
