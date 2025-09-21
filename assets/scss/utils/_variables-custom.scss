@@ -93,6 +93,7 @@ $spacers: (
 ); 
 
 
+
 // input輸入框
 $input-padding-y: 16px;
 $input-padding-x: 20px;
@@ -112,3 +113,11 @@ $accordion-button-active-bg: none;
 $accordion-button-focus-box-shadow:  none;
 $accordion-icon-color:  $primary-40;
 $accordion-icon-active-color: $primary-40;
+
+// 核取方塊背景
+$form-check-input-bg:                     $neutral-white !default;
+$form-check-input-checked-bg-color:       $primary-40 !default;
+
+// modal 滿版螢幕背景
+$modal-backdrop-bg:                  rgba($neutral-100, 0.4)!default;
+
