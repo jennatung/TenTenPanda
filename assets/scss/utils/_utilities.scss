@@ -107,8 +107,8 @@ $utilities: (
     ),
     responsive: true,
   ),
-  
-  // border響應式
+
+    // border響應式
     "border": (
       property: border,
       values: (
@@ -139,7 +139,8 @@ $utilities: (
       values: (
         null: $border-width solid $border-color,
         0: 0,
-      )
+      ),
+      responsive: true,
     ),
     "border-start": (
       property: border-left,
@@ -150,5 +151,19 @@ $utilities: (
       ),
       responsive: true,
     ),
+    
+
 );
 
+// 重新定義 font-size
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": (
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true,
+    ),
+  )
+);
