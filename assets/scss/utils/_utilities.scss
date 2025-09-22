@@ -107,7 +107,48 @@ $utilities: (
     ),
     responsive: true,
   ),
-    
-
+  
+  // border響應式
+    "border": (
+      property: border,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-top": (
+      property: border-top,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-end": (
+      property: border-right,
+      class: border-end,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-bottom": (
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-start": (
+      property: border-left,
+      class: border-start,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
 );
 
