@@ -30,8 +30,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />    
     <title>甜甜熊貓｜TenTen Donut - 最新消息</title>
-    <script type="module" crossorigin src="/TenTenPanda/assets/main-BeJfiR_b.js"></script>
-    <link rel="stylesheet" crossorigin href="/TenTenPanda/assets/main-BhwLujlp.css">
+    <script type="module" crossorigin src="/TenTenPanda/assets/main-B7_xbvT1.js"></script>
+    <link rel="stylesheet" crossorigin href="/TenTenPanda/assets/main-yLgjg1z8.css">
   </head>
   <body">
     <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
@@ -130,7 +130,7 @@
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">個人資訊</a></li>
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的收藏</a></li>
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的訂單</a></li>
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">登出</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="#" id="logoutBtn">登出</a></li>
           </ul>
         </li> 
       </ul>     
@@ -289,13 +289,13 @@
                   <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#">我的訂單</a>
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="#">登出</a>
+                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="#" id="logoutBtn">登出</a>
                 </li>                
               </ul>
             </li>            
           </ul>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
   <!-- Modal (購物車清單) -->
@@ -477,7 +477,7 @@
               </div>
             </button>
             <!-- 展開 -->
-            <div id="news-list-1" class="accordion-collapse collapse" data-bs-toggle="collapse" data-bs-target="#news-list-1" aria-expanded="true" aria-controls="news-title-1" style="cursor: pointer;">
+            <div id="news-list-1" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
                   <img src="/TenTenPanda/assets/ad-news-1-Dsv3MYpr.png" alt="" class="img-fluid">
@@ -503,7 +503,7 @@
                         <li><span class="fw-bold">🥈 熱紅酒莓果</span>：濃郁果香與熱紅酒香氣交織，冬天必吃經典款。</li>
                         <li><span class="fw-bold">🥉 冰霜莓果夾心 ❄️</span>：建議冷藏後直接享用，外層糖霜酥脆、內餡清爽，冰涼口感超療癒 💖</li>
                       </ul> 
-                      <div class="d-flex">
+                      <div class="d-flex justify-content-between">
                         <p>冬夜裡，一口甜甜圈、一口熱飲，<br class="d-block d-lg-none">是最幸福的小確幸<br><a href="productList-seasonal.html" class="fw-bold rounded-pill news-link-font-hover" target="_blank">前往季節限定商品 >></a></p>                        
                         <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-1" aria-expanded="true" aria-controls="news-title-1">
                           <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
@@ -542,7 +542,7 @@
               </div>
             </button>
             <!-- 展開 -->
-            <div id="news-list-2" class="accordion-collapse collapse" data-bs-toggle="collapse" data-bs-target="#news-list-2" aria-expanded="true" aria-controls="news-title-2" style="cursor: pointer;">
+            <div id="news-list-2" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
                   <img src="/TenTenPanda/assets/ad-news-2-yBp8mkGK.jpg" alt="" class="img-fluid">
@@ -568,7 +568,7 @@
                       
                       <p>🍓只在這個冬天限定上市，售完為止！用酸甜草莓和香濃奶油，替寒冷冬夜留下一段溫暖的味覺記憶</p>
 
-                      <div class="d-flex">
+                      <div class="d-flex justify-content-between">
                         <p>快來店裡嚐嚐這 6 款只屬於冬天的甜蜜滋味吧！<br><a href="productList-seasonal.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">前往季節限定商品 >></a></p>                        
                         <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-2" aria-expanded="true" aria-controls="news-title-2">
                           <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
@@ -607,7 +607,7 @@
               </div>
             </button>
             <!-- 展開 -->
-            <div id="news-list-3" class="accordion-collapse collapse" data-bs-toggle="collapse" data-bs-target="#news-list-3" aria-expanded="true" aria-controls="news-title-3" style="cursor: pointer;">
+            <div id="news-list-3" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
                   <img src="/TenTenPanda/assets/ad-news-3-CSzxeNhb.png" alt="" class="img-fluid">
@@ -638,7 +638,6 @@
               </div>
             </div>
           </div>
-
           <!-- 最新消息-4 -->
           <div class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp" id="news-title-4">
             <!-- 收合 -->
@@ -664,7 +663,7 @@
               </div>
             </button>
             <!-- 展開 -->
-            <div id="news-list-4" class="accordion-collapse collapse" data-bs-toggle="collapse" data-bs-target="#news-list-4" aria-expanded="true" aria-controls="news-title-4" style="cursor: pointer;">
+            <div id="news-list-4" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
                   <img src="/TenTenPanda/assets/ad-news-4-BJxJdMc9.png" alt="" class="img-fluid">
@@ -682,7 +681,7 @@
                       <p>推薦冰冰吃更對味，搭配冷萃咖啡或氣泡飲也超級剛好🥤❄️！快帶上好友一起來品嚐這款清爽新甜點吧💛</p>
                       <p><span class="fw-bold">‼ 滿額免運優惠中‼ </span><br>※單筆消費限折扣乙次</p>
                       <div class="d-flex justify-content-between">
-                        <a href="item_details-caramelcocoa.html.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">享用夏日的透心涼 >></a>                        
+                        <a href="item_details-creamlemon.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">享用夏日的透心涼 >></a>                        
                         <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-4" aria-expanded="true" aria-controls="news-title-4">
                           <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
                         </button>                        
@@ -696,13 +695,12 @@
               </div>
             </div>
           </div>
-
         </div>      
       </section>
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDQuNjEgMTkyLjEzIj48ZGVmcz48c3R5bGU+LmNscy0xe2lzb2xhdGlvbjppc29sYXRlO30uY2xzLTIsLmNscy0ze29wYWNpdHk6MC41O21peC1ibGVuZC1tb2RlOmNvbG9yLWRvZGdlO2ZpbGw6I2ZiZWZjYTtmb250LWZhbWlseTpSdW1waTt9LmNscy0ye2ZvbnQtc2l6ZTo3OS40MnB4O2xldHRlci1zcGFjaW5nOjAuMWVtO30uY2xzLTN7Zm9udC1zaXplOjkwLjUzcHg7bGV0dGVyLXNwYWNpbmc6MC4xZW07fTwvc3R5bGU+PC9kZWZzPjxnIGNsYXNzPSJjbHMtMSI+PGcgaWQ9IuWcluWxpF8xIiBkYXRhLW5hbWU9IuWcluWxpCAxIj48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0ibWF0cml4KDEsIC0wLjI0LCAtMC4wNywgMSwgOC4yMiwgMTI0LjY4KSI+R29vZDwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0ibWF0cml4KDEsIC0wLjI0LCAtMC4wNywgMSwgMTQ4LjE4LCAxODMuMDUpIj5OZXdzITwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="" class="position-absolute news-deco-img-letter">
     </main>
 
-    <footer class="mt-10 text-center">
+    <footer class="mt-16 mt-lg-10 text-center">
   <div class="container border-bottom border-primary-40 d-lg-flex justify-content-lg-between align-items-lg-center">
     <div class="mb-10 d-lg-flex flex-lg-row justify-content-lg-center align-items-lg-center">
       <img src="/TenTenPanda/assets/logo-BrUQNHuW.jpg" alt="TenTen-Logo" class="mb-4 mb-lg-0 me-lg-6" />
@@ -717,8 +715,8 @@
     </div>
     <div class="d-lg-flex align-items-lg-center">
       <div class="mb-10">
-        <a href="#" class="fs-T-M me-3 px-lg-5 py-lg-4">退換貨政策</a>
-        <a href="#" class="fs-T-M px-lg-5 py-lg-4 me-lg-18">隱私權政策</a>
+        <a href="../pages/return.html" class="fs-T-M me-3 px-lg-5 py-lg-4">退換貨政策</a>
+        <a href="../pages/privacy.html" class="fs-T-M px-lg-5 py-lg-4 me-lg-18">隱私權政策</a>
       </div>
       <div class="d-flex justify-content-center pb-10">
         <a href="#" class="bg-primary-20 p-3 br-12 me-6"

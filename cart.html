@@ -26,8 +26,8 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">    
     <title>甜甜熊貓｜TenTen Donut - 購物清單</title>
-    <script type="module" crossorigin src="/TenTenPanda/assets/main-BeJfiR_b.js"></script>
-    <link rel="stylesheet" crossorigin href="/TenTenPanda/assets/main-BhwLujlp.css">
+    <script type="module" crossorigin src="/TenTenPanda/assets/main-B7_xbvT1.js"></script>
+    <link rel="stylesheet" crossorigin href="/TenTenPanda/assets/main-yLgjg1z8.css">
   </head>
   <body>
     <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
@@ -126,7 +126,7 @@
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">個人資訊</a></li>
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的收藏</a></li>
             <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的訂單</a></li>
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">登出</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="#" id="logoutBtn">登出</a></li>
           </ul>
         </li> 
       </ul>     
@@ -285,13 +285,13 @@
                   <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#">我的訂單</a>
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="#">登出</a>
+                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="#" id="logoutBtn">登出</a>
                 </li>                
               </ul>
             </li>            
           </ul>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
   <!-- Modal (購物車清單) -->
@@ -473,7 +473,7 @@
               <h1 class="fw-bold text-neutral-100 fs-4 mb-6">訂單內容</h1>
               <!-- 商品1 -->
               <div class="cart-border-top border-neutral-40 pb-lg-10 w-100 pb-6 d-flex flex-column pt-lg-5 pt-2">
-                <button type="button" class="cart-btn cart-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
+                <button type="button" class="cart-checkout-btn cart-checkout-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
                   <i class="bi bi-x-lg"></i>
                 </button>                 
                 <div class="d-flex justify-content-between align-items-start align-items-lg-center gap-lg-12 gap-4 ps-lg-5 px-0 pe-lg-15">
@@ -486,12 +486,12 @@
                         <p class="fw-bold fs-lg-9" style="width: 85px;">莓果甜甜</p>
                         <p class="fw-bold fs-lg-9">NT. 65</p>
                         <div class="rounded-2 px-1 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus-lg pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash-lg pe-1"></i>
                           </button>
                           <p class="px-6 py-2 bg-white fw-bold">2</p>
-                          <button type="button" class="cart-btn ">
-                            <i class="bi bi-dash-lg ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus-lg ps-1"></i>
                           </button>                      
                         </div>
                         <p class="fw-bold fs-lg-9" style="width: 63px;">NT. 130</p>                    
@@ -506,12 +506,12 @@
                       </div>
                       <div class="d-flex justify-content-end">
                         <div class="rounded-2 w-100 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash pe-1"></i>
                           </button>
                           <p class="px-4 py-1 bg-white fs-8 flex-grow-1 text-center">2</p>
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-dash ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus ps-1"></i>
                           </button>                      
                         </div>                    
                       </div>
@@ -524,7 +524,7 @@
               </div>
               <!-- 商品2 -->
               <div class="cart-border-top border-neutral-40 pb-lg-10 w-100 pb-6 d-flex flex-column pt-lg-5 pt-2">
-                <button type="button" class="cart-btn cart-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
+                <button type="button" class="cart-checkout-btn cart-checkout-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
                   <i class="bi bi-x-lg"></i>
                 </button>                 
                 <div class="d-flex justify-content-between align-items-start align-items-lg-center gap-lg-12 gap-4 ps-lg-5 px-0 pe-lg-15">
@@ -537,12 +537,12 @@
                         <p class="fw-bold fs-lg-9" style="width: 85px;">白雪綿霜莓</p>
                         <p class="fw-bold fs-lg-9">NT. 95</p>
                         <div class="rounded-2 px-1 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus-lg pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash-lg pe-1"></i>
                           </button>
                           <p class="px-6 py-2 bg-white fw-bold">1</p>
-                          <button type="button" class="cart-btn ">
-                            <i class="bi bi-dash-lg ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus-lg ps-1"></i>
                           </button>                      
                         </div>
                         <p class="fw-bold fs-lg-9" style="width: 63px;">NT. 95</p>                    
@@ -557,12 +557,12 @@
                       </div>
                       <div class="d-flex justify-content-end">
                         <div class="rounded-2 w-100 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash pe-1"></i>
                           </button>
                           <p class="px-4 py-1 bg-white fs-8 flex-grow-1 text-center">1</p>
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-dash ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus ps-1"></i>
                           </button>                      
                         </div>                    
                       </div>
@@ -575,7 +575,7 @@
               </div>
               <!-- 商品3 -->
               <div class="cart-border-top border-neutral-40 pb-lg-10 w-100 d-flex flex-column pt-lg-5 pt-2">
-                <button type="button" class="cart-btn cart-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
+                <button type="button" class="cart-checkout-btn cart-checkout-btn-x align-self-baseline ms-auto mb-1 d-lg-block d-none">
                   <i class="bi bi-x-lg"></i>
                 </button>                 
                 <div class="d-flex justify-content-between align-items-start align-items-lg-center gap-lg-12 gap-4 ps-lg-5 px-0 pe-lg-15">
@@ -588,12 +588,12 @@
                         <p class="fw-bold fs-lg-9" style="width: 85px;">莓果夾心</p>
                         <p class="fw-bold fs-lg-9">NT. 95</p>
                         <div class="rounded-2 px-1 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus-lg pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash-lg pe-1"></i>
                           </button>
                           <p class="px-6 py-2 bg-white fw-bold">1</p>
-                          <button type="button" class="cart-btn ">
-                            <i class="bi bi-dash-lg ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus-lg ps-1"></i>
                           </button>                      
                         </div>
                         <p class="fw-bold fs-lg-9" style="width: 63px;">NT. 95</p>                    
@@ -608,12 +608,12 @@
                       </div>
                       <div class="d-flex justify-content-end">
                         <div class="rounded-2 w-100 d-flex align-items-center" style="border: 1px solid rgba(199, 199, 199, 0.15); background-color: rgba(199, 199, 199, 0.15);">
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-plus pe-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-dash pe-1"></i>
                           </button>
                           <p class="px-4 py-1 bg-white fs-8 flex-grow-1 text-center">1</p>
-                          <button type="button" class="cart-btn">
-                            <i class="bi bi-dash ps-1"></i>
+                          <button type="button" class="cart-checkout-btn">
+                            <i class="bi bi-plus ps-1"></i>
                           </button>                      
                         </div>                    
                       </div>
@@ -631,7 +631,7 @@
               <h2 class="fw-bold fs-4 text-neutral-100">優惠折扣</h2>
               <div class="mt-lg-5 mt-3">
                 <label for="order-phone" class="lh-base fs-lg-9 fs-9 mb-2 fw-bold">優惠碼</label>
-                <input type="text" class="form-control" id="order-phone" placeholder="請輸入優惠碼">              
+                <input type="text" class="form-control" id="order-phone" placeholder="請輸入優惠碼" value="TENTEN1010">              
               </div>
               <div class="mt-lg-10 mt-8">
                 <h3 class="fw-bold fs-5 text-neutral-100">小計</h3>
@@ -642,14 +642,14 @@
                   </div>
                   <div class="d-flex justify-content-between">
                     <p>優惠折扣</p>
-                    <p><i class="bi bi-dash"></i>NT. 0</p>
+                    <p><i class="bi bi-dash"></i>NT. 100</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="mt-lg-10 mt-8 d-flex flex-column justify-content-center align-items-center gap-4 gap-lg-6">
-              <a href="index.html" class="btn btn-outline-primary-80 w-100 py-4 fs-6">繼續購物</a>
               <a href="order.html" class="btn btn-primary-40 text-white w-100 py-4 fs-6">填寫收件資料</a>
+              <a onclick=history.back() class="btn btn-outline-primary-80 w-100 py-4 fs-6">繼續購物</a>
             </div>            
           </div>
         </div>        
@@ -657,7 +657,7 @@
     </main>
 
 
-    <footer class="mt-10 text-center">
+    <footer class="mt-16 mt-lg-10 text-center">
   <div class="container border-bottom border-primary-40 d-lg-flex justify-content-lg-between align-items-lg-center">
     <div class="mb-10 d-lg-flex flex-lg-row justify-content-lg-center align-items-lg-center">
       <img src="/TenTenPanda/assets/logo-BrUQNHuW.jpg" alt="TenTen-Logo" class="mb-4 mb-lg-0 me-lg-6" />
@@ -672,8 +672,8 @@
     </div>
     <div class="d-lg-flex align-items-lg-center">
       <div class="mb-10">
-        <a href="#" class="fs-T-M me-3 px-lg-5 py-lg-4">退換貨政策</a>
-        <a href="#" class="fs-T-M px-lg-5 py-lg-4 me-lg-18">隱私權政策</a>
+        <a href="../pages/return.html" class="fs-T-M me-3 px-lg-5 py-lg-4">退換貨政策</a>
+        <a href="../pages/privacy.html" class="fs-T-M px-lg-5 py-lg-4 me-lg-18">隱私權政策</a>
       </div>
       <div class="d-flex justify-content-center pb-10">
         <a href="#" class="bg-primary-20 p-3 br-12 me-6"
