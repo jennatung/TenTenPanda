@@ -24,16 +24,17 @@
 }
 
 // 購物車按鈕
-.cart-btn {
+.producList-cart-btn {
   border-radius: 50%;
-  border: none;
-  background-color: $neutral-40;
+  background-color: $neutral-white;
+  border-color: $primary-40;
+  color: $primary-40;
   padding: 8px 10px;
 }
 
-.cart-btn:hover {
-  border-color: $primary-60;  
-  background-color: $primary-60;
+.producList-cart-btn:hover {
+  border-color: $neutral-white;  
+  background-color: $primary-40;
   color: $neutral-white;
 }
 
