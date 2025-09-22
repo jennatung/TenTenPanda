@@ -1,0 +1,12 @@
+
+.img-col{
+    @include media-breakpoint-up(lg){
+        height: 420px;
+    }
+}
+
+.story-img{
+    @include media-breakpoint-up(lg){
+        object-position:50% 70%;
+    }
+}
