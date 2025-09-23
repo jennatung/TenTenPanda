@@ -124,7 +124,7 @@
                       title="請輸入有效的台灣手機號碼（09開頭，共10碼數字）"
                     />
                     <label for="emailInput" class="px-5"
-                      >例如：0912-345-678</label
+                      >例如：0912345678</label
                     >
                   </div>
                 </div>
@@ -160,13 +160,13 @@
                     class="form-control br-8 input-bg px-5"
                     id="passwordInput"
                     placeholder="Password"
-                    pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
                     required
                   />
                   <label for="passwordInput" class="px-5"
-                    >請輸入密碼</label
+                    >半形英數共 8 碼</label
                   >
-                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-8 cursor-pointer" id="togglePassword">
+                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer" id="togglePassword">
                     visibility_off
                   </span>
                 </div>
@@ -183,13 +183,13 @@
                     class="form-control br-8 input-bg px-5"
                     id="passwordReInput"
                     placeholder="Password"
-                    pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
                     required
                   />
                   <label for="passwordReInput" class="px-5"
                     >請再輸入一次密碼</label
                   >
-                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-8 cursor-pointer" id="togglePasswordRe">
+                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer" id="togglePasswordRe">
                     visibility_off
                   </span>
                 </div>

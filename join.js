@@ -1,4 +1,22 @@
+
+
 // join 頁面 - go
+
+/* 初始模式是預設狀態，開始善打出現錯誤格式時才亮紅匡 */
+const inputs = document.querySelectorAll(".form-control");
+
+inputs.forEach(input => {
+  input.addEventListener("blur", function() {
+    if (!input.checkValidity()) {
+      input.classList.add("is-invalid");
+      input.classList.remove("is-valid");
+    } else if(input.checkValidity()) {
+      input.classList.remove("is-invalid");
+      input.classList.add("is-valid");
+    }
+  });
+});
+
 
   const nameInput = document.getElementById("nameInput");      // 姓名
   const phoneInput = document.getElementById("phoneInput");    // 電話

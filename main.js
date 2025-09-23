@@ -16,13 +16,18 @@ dropdownEl.addEventListener("hide.bs.dropdown", () => {
 
 /* 登入登出狀態改變 - go */
   const logoutBtn = document.getElementById('logoutBtn');
+  const logoutBtnMb = document.getElementById('logoutBtnMb');
   // 登出按鈕點擊
-  logoutBtn.addEventListener("click", () => {
+  function handleLogout() {
     localStorage.setItem("isLogin", "false");
     window.location.href = "index.html"; // 回首頁
     updateUI();
-  });
+  }
 
+  logoutBtn.addEventListener("click", handleLogout);
+  logoutBtnMb.addEventListener("click", handleLogout);
+
+  
   // 每次載入頁面時檢查狀態
   const user = document.getElementById('userHeader');
   const guest = document.getElementById('guestHeader');
