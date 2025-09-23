@@ -12,7 +12,14 @@
     <title>contact</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    
+    <div id="userHeader">
+      <%- include('./layout/header-profile'); -%>
+    </div>
+    <div id="guestHeader">
+      <%- include('./layout/header'); -%>
+    </div>
+
     <main class="news-bg">
       <section class="py-lg-12 py-8 container">
         <div class="d-flex flex-column gap-2 align-items-center align-items-lg-start position-relative mb-6">
