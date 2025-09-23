@@ -20,11 +20,6 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <!-- ICON -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -234,33 +229,9 @@
       }
       updateUI();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const emailInput = document.getElementById("emailFindInput");
-        const letterBtn = document.getElementById("letterBtn");
-      
-        // 即時檢查 email 格式
-        emailInput.addEventListener("input", () => {
-          if (emailInput.checkValidity()) {
-            letterBtn.disabled = false;
-          } else {
-            letterBtn.disabled = true;
-          }
-        });
-      
-        // Modal 出現後 → 延遲 1.5 秒跳轉
-        const letterModal = document.getElementById("letterModal");
-        letterModal.addEventListener("shown.bs.modal", () => {
-          setTimeout(() => {
-            window.location.href = "login.html";
-          }, 1500);
-        });
-      });
-    </script>
+
 
   </body>
 </html>
