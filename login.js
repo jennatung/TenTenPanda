@@ -11,11 +11,9 @@ inputs.forEach(input => {
     if (!input.checkValidity()) {
       input.classList.add("is-invalid");
       input.classList.remove("is-valid");
-      console.log('1');
     } else if(input.checkValidity()) {
       input.classList.remove("is-invalid");
       input.classList.add("is-valid");
-      console.log('2');
     }
   });
 });
@@ -46,40 +44,14 @@ if(document.getElementById("loginForm")!= null){
       // 1.5 秒後跳轉首頁
       setTimeout(() => {
         // 關閉 modal
-        const modalInstance = bootstrap.Modal.getInstance(loginModal);
-        modalInstance.hide();
+        loginModal.style.display = "none";
         // 登入跳轉首頁
         localStorage.setItem("isLogin", "true"); // 存在 localStorage
         window.location.href = "index.html";
-        updateUI();
       }, 1500); // 1500 毫秒 = 1.5 秒
     });
   }
 }
-
-  const logoutBtn = document.getElementById('logoutBtn');
-  // 登出按鈕點擊
-  logoutBtn.addEventListener("click", () => {
-    localStorage.setItem("isLogin", "false");
-    window.location.href = "index.html"; // 回首頁
-    updateUI();
-  });
-
-  // 每次載入頁面時檢查狀態
-  const user = document.getElementById('userHeader');
-  const guest = document.getElementById('guestHeader');
-  function updateUI() {
-    let login_state = localStorage.getItem("isLogin") === "true";
-    if(login_state){
-      guest.style.display = "none";
-      user.style.display = "block";
-    }else if (login_state == false){
-      guest.style.display = "block";
-      user.style.display = "none";
-    }
-  }
-  updateUI();
-/* 登入登出狀態改變 - end */
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
@@ -97,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
       });
-
 // login 頁面 - end
 
 

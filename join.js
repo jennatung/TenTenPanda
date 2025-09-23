@@ -1,92 +1,3 @@
-
-// login 頁面 - go
-
-// 只在 submit 時才套用驗證樣式
-//const form_set = document.getElementById("loginForm");
-
-/* 初始模式是預設狀態，開始善打出現錯誤格式時才亮紅匡 */
-const inputs = document.querySelectorAll(".form-control");
-
-inputs.forEach(input => {
-  input.addEventListener("blur", function() {
-    if (!input.checkValidity()) {
-      input.classList.add("is-invalid");
-      input.classList.remove("is-valid");
-      console.log('1');
-    } else if(input.checkValidity()) {
-      input.classList.remove("is-invalid");
-      input.classList.add("is-valid");
-      console.log('2');
-    }
-  });
-});
-
-/* 資訊格式輸入完成才能點選按鈕- go */
-const form = document.getElementById("loginForm");
-const loginBtn = document.getElementById("loginBtn");
-
-// 判斷是否在登入頁 再執行
-if(document.getElementById("loginForm")!= null){
-  function validateForm() {
-    if (form.checkValidity()) {
-      loginBtn.disabled = false; // 表單驗證通過 → 啟用
-    } else {
-      loginBtn.disabled = true; // 驗證未通過 → 保持禁用
-    }
-  }
-  // 監聽整個表單內所有輸入
-  form.addEventListener("input", validateForm);
-  // 預設載入時先檢查一次
-  validateForm();
-
-  /* 登入登出狀態改變-go */
-  const loginModal = document.getElementById('loginModal');
-  // 監聽 Modal 顯示事件
-  if (document.getElementById('loginModal')!=null){
-    loginModal.addEventListener('shown.bs.modal', () => {
-      // 1.5 秒後跳轉首頁
-      setTimeout(() => {
-        // 關閉 modal
-        const modalInstance = bootstrap.Modal.getInstance(loginModal);
-        modalInstance.hide();
-        // 登入跳轉首頁
-        localStorage.setItem("isLogin", "true"); // 存在 localStorage
-        window.location.href = "index.html";
-        updateUI();
-      }, 1500); // 1500 毫秒 = 1.5 秒
-    });
-  }
-}
-
-  const logoutBtn = document.getElementById('logoutBtn');
-  // 登出按鈕點擊
-  logoutBtn.addEventListener("click", () => {
-    localStorage.setItem("isLogin", "false");
-    window.location.href = "index.html"; // 回首頁
-    updateUI();
-  });
-
-  // 每次載入頁面時檢查狀態
-  const user = document.getElementById('userHeader');
-  const guest = document.getElementById('guestHeader');
-  function updateUI() {
-    let login_state = localStorage.getItem("isLogin") === "true";
-    if(login_state){
-      guest.style.display = "none";
-      user.style.display = "block";
-    }else if (login_state == false){
-      guest.style.display = "block";
-      user.style.display = "none";
-    }
-  }
-  updateUI();
-/* 登入登出狀態改變 - end */
-
-// login 頁面 - end
-
-
-
-
 // join 頁面 - go
 
   const nameInput = document.getElementById("nameInput");      // 姓名
@@ -140,13 +51,13 @@ if(document.getElementById("loginForm")!= null){
   // 表單送出時顯示 modal
   joinForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const modalEl = document.getElementById("loginModal");
-    const modal = new bootstrap.Modal(modalEl);
-    modal.show();
+    const modalEl = document.getElementById("joinModal");
+    //const modal = new bootstrap.Modal(modalEl);
+    //modal.show();
 
     // 1.5 秒後自動關閉並跳轉
     setTimeout(() => {
-      modal.hide();
+      modalEl.style.display = "none";
       window.location.href = "login.html";
     }, 1500);
   });
@@ -185,7 +96,6 @@ if(document.getElementById("loginForm")!= null){
       }
     });
   }
-  window.updateUI = updateUI;
 
   setupToggle("passwordInput", "togglePassword");
   setupToggle("passwordReInput", "togglePasswordRe");

@@ -21,13 +21,13 @@
 </head>
 
 <body>
-  <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
-  <% if (true) { %>
-  <!-- 登入成功時顯示 -->
-  <%- include('./layout/header-profile'); -%> <% } else { %>
-  <!-- 未登入時顯示 -->
-  <%- include('./layout/header'); -%> <% } %>
-  <!-- section 1 雪夜莓語主視覺 -->
+  
+    <div id="userHeader">
+      <%- include('./layout/header-profile'); -%>
+    </div>
+    <div id="guestHeader">
+      <%- include('./layout/header'); -%>
+    </div>
 
 
   <!-- 商品詳情-星塵草莓 頁面 -->

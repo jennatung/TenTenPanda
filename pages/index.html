@@ -742,7 +742,7 @@
                 </a>
               </label>
             </div>
-            <a href="/pages/news.html" class="align-self-lg-end align-self-center">
+            <a href="news.html" class="align-self-lg-end align-self-center">
               <button
                 type="button"
                 class="btn more-btn btn-pd-16-32 fs-6 border-radius-4"
@@ -859,25 +859,8 @@
     </section>
 
     <%- include('./layout/footer'); -%>
-    <script>
-      const user = document.getElementById('userHeader');
-      const guest = document.getElementById('guestHeader');
-      let login_state = localStorage.getItem("isLogin") === "true";
-      function updateUI() {
-      let login_state = localStorage.getItem("isLogin") ;
-        if(login_state){
-          guest.style.display = "none";
-          user.style.display = "block";
-        }else{
-          guest.style.display = "block";
-          user.style.display = "none";
-        }
-      }
-      updateUI();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../index.js"></script>
   </body>
 </html>
