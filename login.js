@@ -1,7 +1,3 @@
-import "./assets/scss/all.scss";
-import 'bootstrap/dist/js/bootstrap.min.js';
-
-
 // login 頁面 - go
 
 // 只在 submit 時才套用驗證樣式
